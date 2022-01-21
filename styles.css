@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto";
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+#logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: 700;
+}
+
+header ul {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+
+#statement {
+  background-color: #1f2937;
+  flex-grow: 1;
+}
+
+#information {
+  flex-grow: 1;
+}
+
+#quote {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  color: #1f2937;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+footer {
+  flex: 1 1 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

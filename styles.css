@@ -2,13 +2,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 0px;
 }
 
-header {
+header,
+#statement,
+#information,
+#quote,
+#signup,
+footer {
+  padding: 30px 150px;
+}
+
+footer {
+  flex: 1 1 auto;
+  text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -16,6 +27,12 @@ header,
 footer {
   background-color: #1f2937;
   color: #f9faf8;
+}
+
+/* Header rules */
+header {
+  display: flex;
+  align-items: center;
 }
 
 #logo {
@@ -36,15 +53,61 @@ ul {
   gap: 10px;
 }
 
-#statement {
-  background-color: #1f2937;
-  flex-grow: 1;
-}
-
+/* Info rules */
 #information {
   flex-grow: 1;
 }
 
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+}
+
+#information p {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 52px;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+.image-container img {
+  height: 150px;
+  width: 150px;
+}
+
+/* Statement rules */
+
+#statement {
+  background-color: #1f2937;
+  flex-grow: 1;
+  display: flex;
+}
+
+#statement h2 {
+  font-size: 40px;
+}
+
+#statement-info {
+  display: flex;
+  flex-direction: column;
+  color: #e5e7eb;
+}
+
+#statement img {
+  height: 300px;
+  width: 500px;
+  margin-left: auto;
+}
+
+/* Quote rules */
 #quote {
   background-color: #e5e7eb;
   font-size: 36px;
@@ -53,10 +116,25 @@ ul {
   flex-grow: 1;
 }
 
-footer {
-  flex: 1 1 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#bold-text {
+  font-weight: 700;
+}
+
+/* Signup section */
+.box {
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+.box .signup {
+  border: #e5e7eb;
+}
+
+/* Buttons */
+.signup {
+  background-color: #3882f6;
+  width: 80px;
+  color: #e5e7eb;
+  border-radius: 8px;
+  border: none;
 }
